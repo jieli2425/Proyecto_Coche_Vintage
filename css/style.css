@@ -1,2 +1,588 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estils generals del cos */
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Estilos para el encabezado */
+.main-header {
+    background: linear-gradient(135deg, #555, #000);
+    padding: 30px;
+}
+
+/* Menú de navegación */
+.main-nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilo para la lista de navegación */
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Elementos del menú */
+.nav-item {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Estilo de los enlaces */
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background: gray;
+    color: black;
+}
+
+/* Estilo de la imagen de login */
+#imglogin {
+    width: 5%;
+    margin-left: 80%;
+    align-items: end;
+    filter: invert();
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#imglogin:hover {
+    background: gray;
+    color: #000;
+}
+
+/* Estilo para la sección de contenido */
+/* Sección de contenido principal */
+.content-section1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content-section1 > img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5); /* Fondo translúcido */
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: gray;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #666;
+}
+
+.button a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Parte de servicio*/
+.servicio-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.servicio-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de cartas de coches */
+.coche-cartas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Carta de coche */
+.coche-carta{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.coche-carta:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen del coche */
+.coche-img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Precio debajo de la imagen */
+.coche-carta p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Detalles del coche */
+.coche-carta p strong{
+    font-weight: bold;
+}
+
+.coche-carta h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.coche-carta p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Contenedor de botones */
+.carta-botones {
+    margin-top: 15px;
+}
+
+/* Botón de contacto */
+.contacto-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.contacto-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Parte de mantenimiento */
+.mantenimiento-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f3f4f6;
+}
+
+.mantenimiento-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.mantenimiento-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.mantenimiento-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mantenimiento-card {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.mantenimiento-card-header {
+    display: flex; /* Alinea imagen y título horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    gap: 15px; /* Espacio entre la imagen y el título */
+}
+
+.mantenimiento-card img {
+    width: 15%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.mantenimiento-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mantenimiento-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+
+/* Parte del SobreNosotros */
+.sobrenosotros {
+    text-align:left;
+    padding: 50px;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+.sobrenosotros h1 {
+    font-size: 2.5em;
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobrenosotros-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.sobrenosotros-content h2{
+    text-align: center;
+}
+
+.sobrenosotros-text {
+    max-width: 600px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.sobrenosotros-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Parte del formulario */
+.form {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.form:hover {
+    transform: translateY(-5px);
+}
+
+.form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.form p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+/* Estilo de los campos de entrada */
+.label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+.input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    border-color: #005f6b;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 95, 107, 0.5);
+    outline: none;
+}
+
+.input::placeholder {
+    color: #bbb;
+}
+
+/* Estilo del botón de envío */
+.button {
+    width: 100%;
+    padding: 15px;
+    background-color: #005f6b;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #007c8c;
+}
+
+/* Animación de fondo en el botón */
+.button:active {
+    transform: scale(0.98);
+}
+
+
+/* Parte del login */
+.form2{
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+}
+
+.wrapper{
+    width: 26.25;
+    border-radius: 10px solid;
+    border: 20px;
+    border-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 39.3rem;
+    background-color: gray;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.input-box svg{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    font-weight: 600;
+}
+
+.wrapper .forgot-contrasenya{
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.forgot-contrasenya a{
+    color: white;
+    text-decoration: none;
+}
+.forgot-contrasenya a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+
+/* Parte del footer */
+.nav-footer{
+    background: linear-gradient(135deg, #555, #000);
+    display: flex;
+    padding: 10%;
+
+}
+
+.numTel{
+    font-size: medium;
+    text-decoration: none;
+    color: #f3f4f6;
+}
+
+.nav-footer-ubihora{
+    display: flex;
+    align-items: center;
+}
+
+.imgInvert{
+    filter: invert();
+    width: 10%;
+}
+
+.footer-p{
+    color: white;
+}
+
+.footer-nosotros{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-contacto{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-mantenimiento{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Menú de navegación en columna */
+    .nav-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Ajustar tamaño de los enlaces */
+    .nav-link {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+
+    /* Ajustar el logo de login */
+    #imglogin {
+        margin-left: 10%;
+        transform: translateX(-50%);
+        width: 8%;
+    }
+    
+    /* Cambiar el encabezado para una mejor visualización */
+    .main-header {
+        padding: 20px;
+    }
+}
+
+/* Media query para pantallas muy pequeñas (por ejemplo, móviles en modo vertical) */
+@media (max-width: 480px) {
+    /* Reducir el tamaño de los enlaces */
+    .nav-link {
+        font-size: 0.9em;
+        padding: 6px 10px;
+    }
+
+    #imglogin {
+        width: 10%;
+    }
+}
