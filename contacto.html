@@ -21,51 +21,50 @@
         </nav>
     </header>
 
-    <form action="">
-        <h1>Contáctanos</h1>
+    <section class="form-container">
+        <form class="form">
+            <h1 class="form-titulo">Contáctanos</h1>
+            <p class="description">Contacta con nuestro grupo de profesionales para resolver cualquier pregunta o problema.</p>
 
-        <p>Contacta con nustro grupo de profesionales para resolver cualquier pregunta o problema</p>
+            <div class="form-group">
+                <label for="nombre" class="label">Nombre completo</label>
+                <input type="text" id="nombre" class="form-input" placeholder="Escribe tu nombre completo">
+            </div>
 
-        <label for="">Nombre completo </label>
-        <input type="text" placeholder="Escribe tu nombre completo">
+            <div class="form-group">
+                <label for="telefono" class="label">Teléfono</label>
+                <input type="text" id="telefono" class="form-input" placeholder="Escribe tu teléfono">
+            </div>
 
-        <label for="">Teléfono</label>
-        <input type="text" placeholder="Escribe tu teléfono">
+            <div class="form-group">
+                <label for="email" class="label">Correo electrónico</label>
+                <input type="email" id="email" class="form-input" placeholder="Escribe tu correo electrónico">
+            </div>
 
-        <label for="">Correo electrónico</label>
-        <input type="text" placeholder="Escribe tu correo electrónico">
+            <div class="form-group">
+                <label for="asunto" class="label">Asunto</label>
+                <input type="text" id="asunto" class="form-input" placeholder="Escribe el asunto">
+            </div>
 
-        <label for="">Teléfono</label>
-        <input type="text" placeholder="Escribe tu teléfono">
+            <div class="form-group">
+                <label for="mensaje" class="label">Mensaje</label>
+                <textarea id="mensaje" class="form-input" placeholder="Escribe tu mensaje"></textarea>
+            </div>
 
-        <label for="">Asunto</label>
-        <input type="text" placeholder="Escribe tu teléfono">
-
-        <label for="">Mensaje</label>
-        <input type="text" placeholder="Escribe tu teléfono">
-
-        <button> Enviar </button>
-    </form>
+            <button type="submit" id="button" class="form-button">Enviar</button>
+        </form>
+    </section>
+    <script>
+        // JavaScript para la alerta
+        const boton = document.getElementById('button');
+        boton.addEventListener('click', function (event) {
+            event.preventDefault();
+            alert('¡Formulario enviado con éxito!');
+        });
+    </script>
     
     <footer class="footer-contacto">
         <p>&copy; 2024 Coche Vintage. Todos los derechos reservados.</p>
     </footer>
-    <!-- <footer>
-        <div class="nav-footer">
-            <a href="tel:+930200800" class="numTel">930200800</a>
-            <div class="nav-footer-ubihora">
-                <img src="./img/ubicacion.png" alt="" class="imgInvert">
-                <p class="footer-p">Calle valencia, 08030 Barcelona</p>
-
-                <img src="./img/reloj.png" alt="" class="imgInvert">
-                <p class="footer-p">Lunes a viernes: 10:00 a 14:00 y 16:00 a 20:00 Sábados: 10:00 a 14:00</p>
-            </div>
-            <div>
-                <img src="./img/instagram.png" alt="" class="imgInvert">
-                <img src="./img/facebook.png" alt="" class="imgInvert">
-                <img src="./img/youtube.png" alt="" class="imgInvert">
-            </div>
-        </div>
-    </footer> -->
 </body>
 </html>
