@@ -21,6 +21,7 @@ body {
 .main-header {
     background: linear-gradient(135deg, #555, #000);
     padding: 30px;
+    position: relative;
 }
 
 /* Menú de navegación */
@@ -29,19 +30,36 @@ body {
     text-align: center;
 }
 
-/* Estilo para la lista de navegación */
+.menu-checkbox {
+    display: none;
+}
+
+.menu-label {
+    display: none;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    margin-left: auto;
+    background: none;
+    border: none;
+    text-align: left;
+}
+
+/* Estilo lista de navegación */
 .nav-list {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 0;
+    margin: 0;
+    transition: max-height 0.3s ease;
 }
 
 /* Elementos del menú */
 .nav-item {
     display: inline;
-    margin-right: 15px;
 }
 
 /* Estilo de los enlaces */
@@ -49,7 +67,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.5vw;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
@@ -60,11 +78,10 @@ body {
     color: black;
 }
 
-/* Estilo de la imagen de login */
+/*Estilo de la imagen de login*/
 #imglogin {
     width: 5%;
-    margin-left: 80%;
-    align-items: end;
+    align-items: right;
     filter: invert();
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
@@ -75,8 +92,8 @@ body {
     color: #000;
 }
 
-/* Estilo para la sección de contenido */
-/* Sección de contenido principal */
+
+/* Parte del body de index.html*/
 .content-section1 {
     position: relative;
     display: flex;
@@ -96,7 +113,7 @@ body {
     position: absolute;
     text-align: center;
     color: #fff;
-    background: rgba(0, 0, 0, 0.5); /* Fondo translúcido */
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 10px;
     max-width: 50%;
@@ -259,9 +276,9 @@ body {
     text-align: left;
 }
 .mantenimiento-card-header {
-    display: flex; /* Alinea imagen y título horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    gap: 15px; /* Espacio entre la imagen y el título */
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .mantenimiento-card img {
@@ -285,8 +302,8 @@ body {
 
 /* Parte del SobreNosotros */
 .sobrenosotros {
-    text-align:left;
-    padding: 50px;
+    text-align: left;
+    padding: 50px 20px;
     color: #333;
     background-color: #f7f7f7;
 }
@@ -302,9 +319,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
+    flex-wrap: wrap;
 }
-.sobrenosotros-content h2{
+
+.sobrenosotros-content h2 {
     text-align: center;
 }
 
@@ -315,7 +334,8 @@ body {
 }
 
 .sobrenosotros-image img {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -423,14 +443,14 @@ body {
 }
 
 
-/* Parte del login */
+/* Parte del login.html */
 .form2{
     border-radius: 20px;
     padding: 30px 40px;
     box-shadow: 0 0 50px rgba(0, 0, 0, .1);
 }
 
-.wrapper{
+.form-login{
     width: 26.25;
     border-radius: 10px solid;
     border: 20px;
@@ -438,17 +458,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 39.3rem;
+    min-height: 88.8vh;
     background-color: gray;
 }
 
-.wrapper h1{
+.form-login h1{
     font-size: 36px;
     color: white;
     text-align: center;
 }
 
-.wrapper .input-box{
+.form-login .input-box{
     position: relative;
     width: 100%;
     height: 50px;
@@ -478,7 +498,7 @@ body {
     font-size: 20px;
 }
 
-.wrapper .btn{
+.form-login .btn{
     width: 100%;
     height: 45px;
     background-color: white;
@@ -491,20 +511,20 @@ body {
     font-weight: 600;
 }
 
-.wrapper .forgot-contrasenya{
+.form-login .olvidar-contrasenya{
     font-size: 15px;
     margin-bottom: 20px;
     text-align: center;
 }
-.forgot-contrasenya a{
+.olvidar-contrasenya a{
     color: white;
     text-decoration: none;
 }
-.forgot-contrasenya a:hover{
+.olvidar-contrasenya a:hover{
     text-decoration: underline;
 }
 
-.wrapper .register-link{
+.form-login .register-link{
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
@@ -546,11 +566,13 @@ body {
 }
 
 .footer-p{
+    margin-top: auto;
     color: white;
 }
 
-.footer-nosotros{
-    margin-top: 50px;
+.footer-nosotros,
+.footer-mantenimiento{
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -559,45 +581,79 @@ body {
     text-align: center;
 }
 
-.footer-mantenimiento{
-    margin-top: 20px;
-    text-align: center;
-}
-
 @media (max-width: 770px) {
-    /* Menú de navegación en columna */
+    .menu-label {
+        display: block;
+    }
+
     .nav-list {
         flex-direction: column;
-        gap: 15px;
+        max-height: 0;
+        overflow: hidden;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        gap: 10px;
     }
 
-    /* Ajustar tamaño de los enlaces */
-    .nav-link {
-        font-size: 20px;
-        padding: 8px 12px;
+    /* Cuando el checkbox está activado */
+    .menu-checkbox:checked + .menu-label + .nav-list {
+        max-height: 320px; /* Altura suficiente para mostrar los elementos */
     }
 
-    /* Ajustar el logo de login */
-    #imglogin {
-        margin-left: 10%;
-        transform: translateX(-50%);
-        width: 8%;
+    .nav-item {
+        margin: 10px 0;
     }
-    
-    /* Cambiar el encabezado para una mejor visualización */
-    .main-header {
-        padding: 20px;
+    .nav-link{
+        font-size: 3vw;
     }
+
+    .footer-mantenimiento,
+    .footer-nosotros {
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+
+    .content {
+        max-width: 80%;
+        padding: 15px 20px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .content p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .content {
+        max-width: 90%;
+    }
+
+    .form-login{
+        min-height: 87.9vh;
+    }
+
 }
 
-@media (max-width: 480px) {
-    /* Reducir el tamaño de los enlaces */
-    .nav-link {
-        font-size: 0.9em;
-        padding: 6px 10px;
+@media (max-width: 480px){
+    .form-login{
+        min-height: 85.4vh;
     }
 
-    #imglogin {
-        width: 10%;
+    .nav-link{
+        font-size: 5vw;
+        gap: 5px;
     }
 }
