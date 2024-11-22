@@ -1,40 +1,40 @@
 // Array con los datos de cada coche
 let coches = [
     {
-        nombre: "Ford Mustang", año: 1990,combustible: "Gasolina",km: "16.900",localidad: "Sevilla",precio: "45.000€",image: "./img/ford-mustang.jpg"
+        nombre: "Ford Mustang", año: 1990,combustible: "Gasolina",km: "16.900",localidad: "Zaragoza",precio: "45.000€",image: "./img/ford-mustang.jpg"
     },
     {
-        nombre: "Chevrolet Camaro", año: 1970, combustible: "Gasolina", km: "65,000 km", localidad: "Madrid", precio: "50.000€", image: "./img/chevrolet-camaro.jpg"
+        nombre: "Chevrolet Camaro", año: 1970, combustible: "Gasolina", km: "100,000 km", localidad: "Madrid", precio: "100.000€", image: "./img/chevrolet-camaro.jpg"
     },
     {
-        nombre: "Audi S8", año: 2000, combustible: "Gasolina", km: "65,000 km", localidad: "Madrid", precio: "50.000€", image: "./img/Audi-S8.jpg"
+        nombre: "Audi S8", año: 2000, combustible: "Gasolina", km: "150,000 km", localidad: "Alicante", precio: "45.000€", image: "./img/Audi-S8.jpg"
     },
     {
-        nombre: "Mercedes Sedan", año: 1980, combustible: "Gasolina", km: "65,000 km", localidad: "Madrid", precio: "50.000€", image: "./img/mercedes-sedan.jpg"
+        nombre: "Mercedes Sedan", año: 1980, combustible: "Gasolina", km: "110,000 km", localidad: "Murcia", precio: "200.000€", image: "./img/mercedes-sedan.jpg"
     },
     {
-        nombre: "Nissan H250", año: 1988, combustible: "Gasolina", km: "65,000 km", localidad: "Madrid", precio: "50.000€", image: "./img/Nissan-H250.jpg"
+        nombre: "Nissan H250", año: 1988, combustible: "Gasolina", km: "180,000 km", localidad: "Valencia", precio: "60.000€", image: "./img/Nissan-H250.jpg"
     },
     {
-        nombre: "Lamborghini Miura", año: 1966, combustible: "Gasolina", km: "65,000 km", localidad: "Madrid", precio: "50.000€", image: "./img/lamborghini-miura.jpg"
+        nombre: "Lamborghini Miura", año: 1966, combustible: "Gasolina", km: "80,000 km", localidad: "Bilbao", precio: "290.000€", image: "./img/lamborghini-miura.jpg"
     },
     {
-        nombre: "Porche 911", año: 1972, combustible: "Gasolina", km: "65,000 km", localidad: "Madrid", precio: "50.000€", image: "./img/Porche-911.jpg"
+        nombre: "Porsche 911", año: 1972, combustible: "Gasolina", km: "99,000 km", localidad: "Oviedo", precio: "200.000€", image: "./img/Porche-911.jpg"
     },
     {
-        nombre: "Seat Toledo", año: 1999, combustible: "Gasolina", km: "65,000 km", localidad: "Madrid", precio: "50.000€", image: "./img/Seat-Toledo.jpg"
+        nombre: "Seat Toledo", año: 1999, combustible: "Gasolina", km: "120,000 km", localidad: "Lleida", precio: "40.000€", image: "./img/Seat-Toledo.jpg"
     },
     {
-        nombre: "Dodge Challenger", año: 1970, combustible: "Gasolina", km: "65,000 km", localidad: "Madrid", precio: "50.000€", image: "./img/dodge-challenger.jpg"
+        nombre: "Dodge Challenger", año: 1970, combustible: "Gasolina", km: "170,000 km", localidad: "Girona", precio: "80.000€", image: "./img/dodge-challenger.jpg"
     },
     {
-        nombre: "Volkswagen GTE", año: 1977, combustible: "Gasolina", km: "65,000 km", localidad: "Madrid", precio: "50.000€", image: "./img/Volkswagen-GTE.jpg"
+        nombre: "Volkswagen GTE", año: 1977, combustible: "Gasolina", km: "156,000 km", localidad: "Malaga", precio: "50.000€", image: "./img/Volkswagen-GTE.jpg"
     },
     {
-        nombre: "Renault 18", año: 1978, combustible: "Gasolina", km: "65,000 km", localidad: "Madrid", precio: "50.000€", image: "./img/renault-18.jpg"
+        nombre: "Renault 18", año: 1978, combustible: "Gasolina", km: "134,000 km", localidad: "Barcelona", precio: "40.000€", image: "./img/renault-18.jpg"
     },
     {
-        nombre: "Toyota Supra", año: 1985, combustible: "Gasolina", km: "65,000 km", localidad: "Madrid", precio: "50.000€", image: "./img/toyota-supra.jpg"
+        nombre: "Toyota Supra", año: 1985, combustible: "Gasolina", km: "60,000 km", localidad: "Sevilla", precio: "90.000€", image: "./img/toyota-supra.jpg"
     },
 ];
 
